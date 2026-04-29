@@ -63,3 +63,7 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
+
+// Personal fork of sivchari/kumo - bumping google/uuid to latest for improved
+// random UUID generation performance on newer Linux kernels (getrandom syscall).
+replace github.com/google/uuid => github.com/google/uuid v1.6.0
